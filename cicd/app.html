@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <!-- Add link to CSS stylesheet here -->
+    <link rel="stylesheet" href="wf.css">
+    <!--link rel="stylesheet" href="app.css"-->
+
+</head>
+
+<body>
+
+<!-- Header Section -->
+<!--<header>
+    <nav>
+        <ul>
+            <li>&lt;!&ndash;<a href="#home">Home</a>&ndash;&gt;</li>
+            <li>&lt;!&ndash;<a href="#services">Services</a>&ndash;&gt;</li>
+            <li>&lt;!&ndash;<a href="#about">About</a>&ndash;&gt;</li>
+            <li>&lt;!&ndash;<a href="#contact">Contact</a>&ndash;&gt;</li>
+        </ul>
+    </nav>
+</header>-->
+<header class="product-header">
+    <h1>productName</h1>
+</header>
+
+
+<div class="documentation-section">
+    <h1>Actions documentation</h1>
+    <p>Automate, customize, and execute your software development workflows right in your repository with GitHub Actions. You can discover, create, and share actions to perform any job you'd like, including CI/CD, and combine actions in a completely customized workflow.</p>
+    <div class="buttons">
+        <button class="button green">Overview</button>
+        <button class="button">Quickstart</button>
+    </div>
+</div>
+
+<div class="content-section">
+    <div class="content-column">
+        <h2>Start here</h2>
+        <p>View all ></p>
+        <h3>Learn GitHub Actions</h3>
+        <p>Whether you are new to GitHub Actions or interested in learning all they have to offer, this guide will help you use GitHub Actions to accelerate your application development workflows.</p>
+
+        <!-- Other sections -->
+    </div>
+
+    <div class="content-column">
+        <h2>Popular</h2>
+        <p>View all ></p>
+        <h3>Workflow syntax for GitHub Actions</h3>
+        <p>A workflow is a configurable automated process made up of one or more jobs. You must create a YAML file to define your workflow.</p>
+
+        <!-- Other sections -->
+    </div>
+
+    <div class="content-column">
+        <h2>What's new</h2>
+        <p>View all ></p>
+        <h3>GitHub Actions – Artifacts v4 is now Generally Available</h3>
+        <p>December 14</p>
+
+        <!-- Other sections -->
+    </div>
+</div>
+
+
+
+<div class="guides-container">
+    <h2>&nbsp;&nbsp;Guides</h2>
+    <div class="guides">
+        <div class="guide">
+            <h3>Using starter workflows</h3>
+            <p>GitHub provides starter workflows for a variety of languages and tooling.</p>
+            <span class="author">@GitHub</span>
+        </div>
+        <div class="guide">
+            <h3>Publishing Node.js packages</h3>
+            <p>You can publish Node.js packages to a registry as part of your continuous integration (CI) workflow.</p>
+            <span class="author">@GitHub</span>
+        </div>
+        <div class="guide">
+            <h3>Building and testing PowerShell</h3>
+            <p>You can create a continuous integration (CI) workflow to build and test your PowerShell project.</p>
+            <span class="author">@potatoqualitee</span>
+        </div>
+        <div class="guide">
+            <h3>Building and testing PowerShell</h3>
+            <p>You can create a continuous integration (CI) workflow to build and test your PowerShell project.</p>
+            <span class="author">@potatoqualitee</span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-section">
+    <h2>All GitHub Actions docs</h2>
+    <div class="docs-columns">
+        <div class="docs-column">
+            <h3>Learn GitHub Actions</h3>
+            <ul>
+                <li><a href="#">Understanding GitHub Actions</a></li>
+                <li><a href="#">Finding and customizing actions</a></li>
+                <!-- ... more links ... -->
+                <li><a href="#">Using starter workflows</a></li>
+                <li><a href="#">Usage limits, billing, and administration</a></li>
+            </ul>
+        </div>
+        <div class="docs-column">
+            <h3>Examples</h3>
+            <ul>
+                <li><a href="#">Using scripts to test code on a runner</a></li>
+                <li><a href="#">Using the GitHub CLI on a runner</a></li>
+                <!-- ... more links ... -->
+            </ul>
+        </div>
+        <div class="docs-column">
+            <h3>Using workflows</h3>
+            <ul>
+                <li><a href="#">About workflows</a></li>
+                <li><a href="#">Triggering a workflow</a></li>
+                <!-- ... more links ... -->
+                <li><a href="#">Using GitHub CLI in workflows</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <!-- Get started column -->
+        <div class="footer-column">
+            <h3>Get started</h3>
+            <ul>
+                <li><a href="#">Get started</a></li>
+                <li><a href="#">Migrations</a></li>
+                <li><a href="#">Account and profile</a></li>
+                <li><a href="#">Authentication</a></li>
+                <!-- more list items -->
+            </ul>
+        </div>
+
+        <!-- Collaborative coding column -->
+        <div class="footer-column">
+            <h3>Collaborative coding</h3>
+            <ul>
+                <li><a href="#">Codespaces</a></li>
+                <li><a href="#">Repositories</a></li>
+                <li><a href="#">Pull requests</a></li>
+                <li><a href="#">GitHub Discussions</a></li>
+                <!-- more list items -->
+            </ul>
+        </div>
+
+        <!-- CI/CD and DevOps column -->
+        <div class="footer-column">
+            <h3>CI/CD and DevOps</h3>
+            <ul>
+                <li><a href="#">GitHub Actions</a></li>
+                <li><a href="#">GitHub Packages</a></li>
+                <li><a href="#">GitHub Pages</a></li>
+                <!-- more list items -->
+            </ul>
+        </div>
+
+        <!-- Security column -->
+        <div class="footer-column">
+            <h3>Security</h3>
+            <ul>
+                <li><a href="#">Code security</a></li>
+                <li><a href="#">Supply chain security</a></li>
+                <li><a href="#">Security advisories</a></li>
+                <!-- more list items -->
+            </ul>
+        </div>
+
+        <!-- Other columns would follow the same pattern -->
+
+    </div>
+</footer>
+
+<!-- Main Content Section -->
+<!--<main>
+
+    &lt;!&ndash; Home Section &ndash;&gt;
+    <section id="home">
+        <h1>Welcome to Our Website</h1>
+        <p>This is a paragraph introducing your website.</p>
+        &lt;!&ndash; Add more content here such as images, text, etc. &ndash;&gt;
+    </section>
+
+    &lt;!&ndash; Services Section &ndash;&gt;
+    <section id="services">
+        <h2>Our Services</h2>
+        <article>
+            <h3>Service 1</h3>
+            <p>Description of Service 1</p>
+        </article>
+        <article>
+            <h3>Service 2</h3>
+            <p>Description of Service 2</p>
+        </article>
+        &lt;!&ndash; Add more services here &ndash;&gt;
+    </section>
+
+    &lt;!&ndash; About Section &ndash;&gt;
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Information about the company, mission, vision, team, etc.</p>
+    </section>
+
+    &lt;!&ndash; Contact Section &ndash;&gt;
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            &lt;!&ndash; Input fields for the contact form &ndash;&gt;
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</main>-->
+
+<!-- Footer Section -->
+<footer>
+    <p>© 2024 Company Name. All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>

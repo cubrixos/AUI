@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Documentation Page</title>
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .feature {
+      text-align: center;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .feature h3 {
+      margin-top: 20px;
+      color: #333;
+    }
+    .feature p {
+      color: #666;
+    }
+    .feature img {
+      width: 100px;
+      height: auto;
+    }
+    .feature a {
+      color: #005cc5;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .feature a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="features-grid">
+    <div class="feature">
+      <img src="path-to-your-image-1.png" alt="Icon 1">
+      <h3>Component documentation</h3>
+      <p>AUI provides JavaScript, CSS and Soy templates for UI components.</p>
+      <a href="#">API documentation</a>
+    </div>
+    <div class="feature">
+      <img src="path-to-your-image-2.png" alt="Icon 2">
+      <h3>Upgrade guide</h3>
+      <p>Guidelines for upgrading from a previous version of AUI.</p>
+      <a href="#">Upgrade guides</a>
+    </div>
+    <div class="feature">
+      <img src="path-to-your-image-3.png" alt="Icon 3">
+      <h3>Design patterns</h3>
+      <p>AUI provides design and usability patterns for custom components.</p>
+      <a href="#">Design Patterns</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
