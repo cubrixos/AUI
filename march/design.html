@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Your Documentation Home</title>
-    <link rel="stylesheet" href="path/to/aui/css/aui.css" media="all">
-    <script src="path/to/aui/js/aui.js"></script>
-</head>
+   <!-- <link rel="stylesheet" href="design.css" />-->
+    <link rel="stylesheet" href="header2.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.10.0/aui/themes/dark.min.js" integrity="sha512-lifWhfdrV3AmR9KKwErf/8UzAYSaNTjalvhH+8Ch7tHFFwgr8usZ2AXtnmEdFZ++EwOHU/T3+XunW8HYA7Za2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></head>
 <body>
-    <header>
+<!--    <header>
         <nav class="aui-header aui-dropdown2-trigger-group">
             <div class="aui-header-inner">
                 <div class="aui-header-primary">
                     <h1>Your Project Name</h1>
                     <ul class="aui-nav">
-                        <!-- Navigation Items -->
+                        &lt;!&ndash; Navigation Items &ndash;&gt;
                         <li><a href="#">Home</a></li>
                         <li><a href="#">API Reference</a></li>
                         <li><a href="#">Guides</a></li>
@@ -21,38 +22,38 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="aui-page-panel">
-        <div class="aui-page-panel-inner">
-            <aside class="aui-page-panel-sidebar">
-                <!-- Side Navigation -->
-                <nav>
-                    <h2>Documentation Sections</h2>
-                    <ul class="aui-nav">
-                        <li><a href="#">Getting Started</a></li>
-                        <li><a href="#">Quickstart Guides</a></li>
-                        <!-- Additional Sections -->
-                    </ul>
-                </nav>
-            </aside>
-            <section class="aui-page-panel-content">
-                <!-- Main Content Area -->
-                <div class="aui-page-header">
-                    <div class="aui-search-bar" id="search-bar">
-                        <form>
-                            <input class="aui-text" type="search" placeholder="Search documentation...">
-                            <button class="aui-button" type="submit">Search</button>
-                        </form>
-                    </div>
-                    <h1>Welcome to Our Documentation</h1>
-                    <p>Your introduction or highlight content here.</p>
-                </div>
-                <!-- Further content sections -->
-            </section>
+    </header>-->
+<header class="aui-header aui-dropdown2-trigger-group" id="header">
+    <div class="aui-header-inner">
+        <div class="aui-header-primary">
+            <h1 class="aui-header-logo">
+                <a href="#"> Docs</a>
+            </h1>
+            <nav class="aui-header-nav">
+                <ul class="aui-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">product</a></li>
+                    <li><a href="#">tutorialn</a></li>
+                    <!-- More navigation items -->
+                </ul>
+            </nav>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Create Account</a></li>
+                </ul>
+                <!-- Global search form -->
+                <form class="aui-header-search">
+                    <input class="search" type="search" placeholder="Search the docs...">
+                    <button class="aui-icon aui-icon-small aui-iconfont-search"></button>
+                </form>
+            </div>
         </div>
     </div>
+</header>
+
     <footer class="aui-footer">
-        <p>© Your Project or Company Name</p>
+        <p>© platform</p>
     </footer>
 </body>
 </html>
