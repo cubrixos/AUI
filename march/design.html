@@ -1,13 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Your Documentation Home</title>
-   <!-- <link rel="stylesheet" href="design.css" />-->
-    <link rel="stylesheet" href="header2.css" />
+    <!-- <link rel="stylesheet" href="design.css" />-->
+<style>
+    /* Base Header Styling */
+    .aui-header {
+        background-color: #f3f6f9; /* Light grey color extracted from the Stripe docs header */
+        color: #ffffff;
+        border-bottom: 2px solid #003399; /* A complementing darker shade for depth */
+        padding: 0; /* Add this if the header has padding you want to remove */
+        margin: 0;
+    }
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.10.0/aui/themes/dark.min.js" integrity="sha512-lifWhfdrV3AmR9KKwErf/8UzAYSaNTjalvhH+8Ch7tHFFwgr8usZ2AXtnmEdFZ++EwOHU/T3+XunW8HYA7Za2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></head>
-</h>
+
+    /* Logo Text or Image */
+    .aui-header-logo a {
+        color: darkslateblue;
+        font-size: 1em; /* Larger font size for visibility */
+        text-decoration: none;
+        padding: 10px; /* Remove default padding */
+        vertical-align: middle; /* Aligns the logo vertically */
+        line-height: 1; /* Reduced from 80px to tighten up the space */
+        display: flex;
+        align-items: center; /* This will vertically align the logo text */
+        height: 40px; /* Or any height that matches your design goals */
+
+    }
+
+
+    /* Navigation Link Styling */
+    .aui-nav {
+        list-style-type: none; /* Remove bullet points */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+
+    }
+
+    .aui-nav li {
+        display: inline-block; /* Align items horizontally */
+        margin-right: 20px; /* Space between items */
+    }
+
+    .aui-nav a {
+        color: darkslateblue;
+        text-decoration: none;
+        padding: 20px 15px;
+        display: block; /* Apply padding correctly */
+        padding-top: 10px; /* Reduced from 20px to align better with the logo */
+        padding-bottom: 10px; /* Reduced from 20px for a tighter look */
+
+    }
+
+    .aui-nav a:hover {
+        color: darkslateblue; /* This will be the text color on hover */
+        background-color: transparent; /* Keeps the background color unchanged on hover */
+    }
+
+    /* Search Input Field Styling */
+    .aui-header-search .search {
+        border: 1px solid #ffffff; /* Define border */
+        padding: 8px 10px;
+        border-radius: 4px;
+        font-size: 1em; /* Match font size with nav */
+        margin: 10px 0; /* Vertical spacing */
+        width: 240px; /* Fixed width or use max-width for responsiveness */
+
+    }
+
+    /* Search Button Styling */
+    .aui-header-search button {
+        background: none;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        padding: 8px 10px;
+
+    }
+
+    /* Right Aligned Items in Header */
+    .aui-header-secondary {
+        float: right; /* Align to the right */
+        padding: 0 20px; /* Padding to align with logo text */
+    }
+
+    /* Responsive Adjustments */
+    @media screen and (max-width: 768px) {
+        .aui-nav {
+            display: none; /* Hide on smaller screens */
+        }
+
+        .aui-header-logo a {
+            font-size: 1.5em; /* Smaller logo on small screens */
+        }
+
+        .aui-header-search .search {
+            width: auto; /* Full width on small screens */
+            max-width: 240px; /* Maximum width */
+            margin: 10px; /* Adjust spacing */
+        }
+
+        .aui-header-secondary {
+            float: none;
+            text-align: center; /* Center align secondary items */
+        }
+    }
+
+</style>
+</head>
 
 <body>
 <!--    <header>
@@ -39,23 +141,9 @@
                     <!-- More navigation items -->
                 </ul>
             </nav>
-            <div class="aui-header-secondary">
-                <ul class="aui-nav">
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Create Account</a></li>
-                </ul>
-                <!-- Global search form -->
-                <form class="aui-header-search">
-                    <input class="search" type="search" placeholder="Search the docs...">
-                    <button class="aui-icon aui-icon-small aui-iconfont-search"></button>
-                </form>
-            </div>
         </div>
     </div>
 </header>
 
-    <footer class="aui-footer">
-        <p>© platform</p>
-    </footer>
 </body>
 </html>
