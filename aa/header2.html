@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlassian User Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #e1e4e8;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+    .header p {
+      font-size: 14px;
+      color: #576069;
+    }
+    .version {
+      font-size: 14px;
+      color: #576069;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .features-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 20px;
+    }
+    .feature {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+    }
+    .feature h2 {
+      margin-top: 16px;
+      font-size: 18px;
+      color: #333;
+    }
+    .feature p {
+      color: #576069;
+    }
+    .feature a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #0052cc;
+      text-decoration: none;
+    }
+    .feature a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .features-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Atlassian User Interface</h1>
+  <p>AUI is a tailor-made frontend library for creating a user interface according to the Atlassian Design Guidelines.</p>
+  <p class="version">9.10</p>
+</div>
+
+<div class="features-container">
+  <!-- Feature 1 -->
+  <div class="feature">
+    <img src="path-to-your-component-documentation-icon.png" alt="Component Documentation">
+    <h2>Component Documentation</h2>
+    <p>AUI provides JavaScript, CSS and Soy templates for a range of ready-made UI components.</p>
+    <a href="#">API Documentation</a>
+  </div>
+
+  <!-- Feature 2 -->
+  <div class="feature">
+    <img src="path-to-your-upgrade-guide-icon.png" alt="Upgrade Guide">
+    <h2>Upgrade Guide</h2>
+    <p>Upgrading from a previous version of AUI? Check what's changed and what to pay attention to when bumping the version you're using.</p>
+    <a href="#">Upgrade Guides</a>
+
