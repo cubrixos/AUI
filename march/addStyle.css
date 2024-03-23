@@ -1,0 +1,65 @@
+/* Base styling for the header */
+.aui-header {
+    background-color: #f3f6f9; /* Light gray background */
+    color: #333; /* Dark text for contrast */
+    border-bottom: 1px solid #e1e4e8; /* Light border for subtle separation */
+}
+
+/* Inner header styling */
+.aui-header-inner {
+    max-width: 1200px; /* Limit the width for larger screens */
+    margin: 0 auto; /* Center the header content */
+    padding: 0 20px; /* Add some padding on the sides */
+    display: flex;
+    justify-content: space-between; /* Space out logo and navigation */
+    align-items: center; /* Vertically center the content */
+}
+
+/* Logo styling */
+.aui-header-logo a {
+    color: #0052cc; /* Primary color for the logo */
+    text-decoration: none; /* No underline */
+    font-size: 24px; /* Larger font size for the logo */
+    font-weight: bold; /* Make the logo text bold */
+}
+
+/* Navigation styling */
+.aui-header-nav .aui-nav {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align nav items in a row */
+}
+
+.aui-header-nav .aui-nav li {
+    margin-left: 30px; /* Space between nav items */
+}
+
+.aui-header-nav .aui-nav li a {
+    color: #333; /* Dark text for contrast */
+    text-decoration: none; /* No underline */
+    padding: 10px 0; /* Padding to increase clickable area */
+    font-size: 16px; /* Font size for nav items */
+}
+
+.aui-header-nav .aui-nav li a:hover {
+    color: #0052cc; /* Highlight color on hover */
+}
+
+/* Additional styles for dropdown triggers, if you have dropdown menus */
+.aui-dropdown2-trigger {
+    cursor: pointer; /* Change mouse cursor to indicate clickable */
+}
+
+/* Add more styles based on your needs, such as responsive adjustments */
+@media (max-width: 768px) {
+    .aui-header-nav .aui-nav {
+        flex-direction: column; /* Stack nav items vertically on small screens */
+        margin-left: 0; /* Remove left margin on small screens */
+    }
+
+    .aui-header-nav .aui-nav li {
+        margin-left: 0; /* Remove left margin for nav items */
+        margin-top: 10px; /* Add top margin for spacing */
+    }
+}
