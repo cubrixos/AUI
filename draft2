@@ -12,6 +12,8 @@ Key Benefits:
 1. Flexibility: We could adjust metrics in the exporter as needed without altering Grafana panels.
 2. Enhanced Visibility: Better dashboard insights would enable us to proactively identify and resolve issues more effectively.
 
+https://developers.grafana.com/ui/latest/index.html?path=/story/buttons-button--examples
+https://prometheus.io/docs/alerting/latest/overview/
 
 Can we discuss this idea further with Chandra & Observability team? 
 
