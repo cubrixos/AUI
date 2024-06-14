@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Define variables
+REPO_URL="https://github.com/username/repository.git"
+FILE_PATH="/path/to/your/file.txt"
+COMMIT_MESSAGE="Automated: Add file to trigger webhook"
+BRANCHES=("branch1" "branch2" "branch3" "branch4" "branch5" "branch6" "branch7" "branch8" "branch9" "branch10")
+
+# Clone the repository
+git clone $REPO_URL
+cd repository
+
+# Iterate over each branch
+for BRANCH in "${BRANCHES[@]}"; do
+    # Checkout the branch
+    git checkout $BRANCH
+
+    # Copy the file to the repository
+    cp $FILE_PATH .
+
+    # Add the file to git
+    git add $(basename $FILE_PATH)
+
+    # Commit the changes
+    git commit -m "$COMMIT_MESSAGE"
+
+    # Push the changes to the branch
+    git push origin $BRANCH
+done
+
+# Clean up
+cd ..
+rm -rf repository
+
+echo "File pushed to all branches and webhooks triggered."
