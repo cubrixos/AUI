@@ -1,0 +1,66 @@
+
+f
+
+<h2>CI/CD Product Training Registration</h2>
+<p>Welcome to the registration page for the CI/CD Product Training. Please fill out the form below to register for the sessions.</p>
+
+<form id="registrationForm">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="team">Team:</label><br>
+  <select id="team" name="team" required>
+    <option value="breakfix">Breakfix</option>
+    <option value="infrastructure">Infrastructure</option>
+    <option value="other">Other</option>
+  </select><br><br>
+
+  <label for="role">Role:</label><br>
+  <input type="text" id="role" name="role" required><br><br>
+
+  <label for="sessions">Training Sessions:</label><br>
+  <input type="checkbox" id="introduction" name="sessions" value="Introduction">
+  <label for="introduction"> Introduction</label><br>
+  <input type="checkbox" id="gitsaas" name="sessions" value="GitSaaS">
+  <label for="gitsaas"> GitSaaS</label><br>
+  <input type="checkbox" id="scanningtools" name="sessions" value="Scanning Tools">
+  <label for="scanningtools"> Scanning Tools</label><br>
+  <input type="checkbox" id="harnesspcf" name="sessions" value="Harness-PCF">
+  <label for="harnesspcf"> Harness-PCF</label><br>
+  <input type="checkbox" id="handsonlabs" name="sessions" value="Hands-on Labs">
+  <label for="handsonlabs"> Hands-on Labs</label><br><br>
+
+  <label for="comments">Additional Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+  <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<script>
+  function submitForm() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const team = document.getElementById('team').value;
+    const role = document.getElementById('role').value;
+    const sessions = Array.from(document.querySelectorAll('input[name="sessions"]:checked'))
+      .map(el => el.value)
+      .join(', ');
+    const comments = document.getElementById('comments').value;
+
+    const subject = 'CI/CD Product Training Registration';
+    const body = `
+      Name: ${name}%0D%0A
+      Email: ${email}%0D%0A
+      Team: ${team}%0D%0A
+      Role: ${role}%0D%0A
+      Training Sessions: ${sessions}%0D%0A
+      Additional Comments: ${comments}%0D%0A
+    `;
+
+    const mailtoLink = `mailto:youremail@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  }
+</script>
