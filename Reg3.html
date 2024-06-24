@@ -1,0 +1,124 @@
+
+1
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px 0; /* Adjust margin to align left */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  form .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  form .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  form .checkbox-group label {
+    display: inline;
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #333;
+  }
+
+  form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  form button:hover {
+    background-color: #45a049;
+  }
+
+  h2 {
+    text-align: left;
+    color: #333;
+    margin-left: 20px;
+  }
+
+  p {
+    text-align: left;
+    color: #666;
+    margin-left: 20px;
+  }
+</style>
+
+<form id="registrationForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="team">Team:</label>
+  <select id="team" name="team" required>
+    <option value="breakfix">Breakfix</option>
+    <option value="infrastructure">Infrastructure</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label for="role">Role:</label>
+  <input type="text" id="role" name="role" required>
+
+  <label for="sessions">Training Sessions:</label>
+  <div class="checkbox-group">
+    <input type="checkbox" id="introduction" name="sessions" value="Introduction">
+    <label for="introduction">Introduction</label>
+  </div>
+  <div class="checkbox-group">
+    <input type="checkbox" id="gitsaas" name="sessions" value="GitSaaS">
+    <label for="gitsaas">GitSaaS</label>
+  </div>
+  <div class="checkbox-group">
+    <input type="checkbox" id="scanningtools" name="sessions" value="Scanning Tools">
+    <label for="scanningtools">Scanning Tools</label>
+  </div>
+  <div class="checkbox-group">
+    <input type="checkbox" id="harnesspcf" name="sessions" value="Harness-PCF">
+    <label for="harnesspcf">Harness-PCF</label>
+  </div>
+  <div class="checkbox-group">
+    <input type="checkbox" id="handsonlabs" name="sessions" value="Hands-on Labs">
+    <label for="handsonlabs">Hands-on Labs</label>
+  </div>
+
+  <label for="comments">Additional Comments:</label>
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+  <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
