@@ -1,0 +1,129 @@
+
+q1
+<h2>CI/CD Product Training Registration</h2>
+<p>Welcome to the registration page for the CI/CD Product Training. Please fill out the form below to register for the sessions.</p>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  form button:hover {
+    background-color: #45a049;
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  p {
+    text-align: center;
+    color: #666;
+  }
+</style>
+
+<form id="registrationForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="team">Team:</label>
+  <select id="team" name="team" required>
+    <option value="breakfix">Breakfix</option>
+    <option value="infrastructure">Infrastructure</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label for="role">Role:</label>
+  <input type="text" id="role" name="role" required>
+
+  <label for="sessions">Training Sessions:</label>
+  <input type="checkbox" id="introduction" name="sessions" value="Introduction">
+  <label for="introduction">Introduction</label>
+  <input type="checkbox" id="gitsaas" name="sessions" value="GitSaaS">
+  <label for="gitsaas">GitSaaS</label>
+  <input type="checkbox" id="scanningtools" name="sessions" value="Scanning Tools">
+  <label for="scanningtools">Scanning Tools</label>
+  <input type="checkbox" id="harnesspcf" name="sessions" value="Harness-PCF">
+  <label for="harnesspcf">Harness-PCF</label>
+  <input type="checkbox" id="handsonlabs" name="sessions" value="Hands-on Labs">
+  <label for="handsonlabs">Hands-on Labs</label>
+
+  <label for="comments">Additional Comments:</label>
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+  <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<script>
+  function submitForm() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const team = document.getElementById('team').value;
+    const role = document.getElementById('role').value;
+    const sessions = Array.from(document.querySelectorAll('input[name="sessions"]:checked'))
+      .map(el => el.value)
+      .join(', ');
+    const comments = document.getElementById('comments').value;
+
+    const subject = 'CI/CD Product Training Registration';
+    const body = `
+      Name: ${name}%0D%0A
+      Email: ${email}%0D%0A
+      Team: ${team}%0D%0A
+      Role: ${role}%0D%0A
+      Training Sessions: ${sessions}%0D%0A
+      Additional Comments: ${comments}%0D%0A
+    `;
+
+    const ccEmail = 'ccemail@example.com'; // Replace with the CC email address
+
+    const mailtoLink = `mailto:youremail@example.com?cc=${ccEmail}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  }
+</script>
