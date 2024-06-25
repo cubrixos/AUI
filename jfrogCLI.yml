@@ -1,4 +1,5 @@
 # https://github.com/marketplace/actions/setup-jfrog-cli
+#https://docs.jfrog-applications.jfrog.io/ci-and-sdks/ci-integrations/github-actions
 name: Build and Publish
 
 on:
